@@ -32,6 +32,6 @@ spec:
     spec:
       containers:
       - name: pythonapp
-        image: gcr.io/lbg-090522/automated-image:latest
+        image: gcr.io/LBG7-20220905/stuart-image:latest
         ports:
         - containerPort: 8080

@@ -4,9 +4,9 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                docker build -t gcr.io/lbg-090522/automated-image:latest -t gcr.io/lbg-090522/automated-image:$BUILD_NUMBER .
-                docker push gcr.io/lbg-090522/automated-image:latest
-                docker push gcr.io/lbg-090522/automated-image:$BUILD_NUMBER
+                docker build -t gcr.io/LBG7-20220905/stuart-image:latest -t gcr.io/LBG7-20220905/stuart-image:$BUILD_NUMBER .
+                docker push gcr.io/LBG7-20220905/stuart-image:latest
+                docker push gcr.io/LBG7-20220905/stuart-image:$BUILD_NUMBER
                 '''
             }
         }
